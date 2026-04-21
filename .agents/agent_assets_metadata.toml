@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "mQ7YGj5Ytucu7M4TnAruK"
+uri = "file://exports/optics-lab.zip"
+type = "unspecified"
+title = "Optical Physics Lab — Source Code"
