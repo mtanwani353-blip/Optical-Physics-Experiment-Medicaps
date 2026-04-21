@@ -21,3 +21,4 @@ OPTION 3 (Host online for free):
 NOTE: Modern browsers block ES modules from being loaded directly via
 file:// (i.e. just double-clicking index.html will NOT work). You need
 a small local server. The options above all work.
+
