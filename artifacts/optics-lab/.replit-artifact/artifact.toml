@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Optical Physics Lab"
+version = "1.0.0"
+id = "artifacts/optics-lab"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18166
+
+[services.development]
+run = "pnpm --filter @workspace/optics-lab run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/optics-lab", "run", "build" ]
+publicDir = "artifacts/optics-lab/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18166"
+BASE_PATH = "/"
